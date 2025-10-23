@@ -1,10 +1,67 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #fff;
+    background-image: url('assets/background.jpg') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-color: rgba(0,114,255,0.4);
+    background-blend-mode: overlay;
+}
+
+.container {
+      /* background: rgba(255, 255, 255, 0.1); */
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
 }
 h1{
-    text-align: center;
-    color: red;
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+input[type="text"]:focus{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+#locationInput{
     height: 30px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    border-color: #0072ff;
     
+    
+}
+#locationInput:hover{
+    height: 35px;
+    width: 230px;
+    transition: 0.8s ease;
+    
+}
+button{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #0072ff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+button:hover {
+      background-color: #f0f0f0;
+      transform: scale(1.05);
 }
