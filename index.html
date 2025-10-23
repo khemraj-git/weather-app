@@ -8,7 +8,7 @@
 </head>
 <body >
 
-<div class="location-page" >
+<div class="location-page" id="locationPage" >
     <div class="container">
     <h1>Enter Your Location</h1><br>
     <form id="locationForm">
@@ -22,14 +22,38 @@
 
 <!-- second page -->
  
+<div class="weather-page hidden" id="weatherPage">
+    <div class="container weather-container">
+        <h2 id="weatherLocation">Loading...</h2>
+        <p id="weatherDate">Thursday, 23 October</p>
+        
+        <div class="main-info">
+            <img src="assets/sun.png" alt="Weather Icon" id="weatherIcon" class="icon">
+            <h1 id="temperature">25°C</h1>
+            <p id="description">Sunny Skies</p>
+        </div>
 
-
-
-
-
-
-
-
+        <div class="details-grid">
+            <div class="detail-box">
+                <img src="assets/humidity.png" alt="Humidity Icon">
+                <span id="humidity">70%</span>
+                <p>Humidity</p>
+            </div>
+            <div class="detail-box">
+                <img src="assets/wind.png" alt="Wind Icon">
+                <span id="windSpeed">15 km/h</span>
+                <p>Wind Speed</p>
+            </div>
+            <div class="detail-box">
+                <img src="assets/pressure.png" alt="Pressure Icon">
+                <span id="pressure">1012 hPa</span>
+                <p>Pressure</p>
+            </div>
+        </div>
+        
+        <button id="backButton">Change Location</button>
+    </div>
+</div>
 
 
 
